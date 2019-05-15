@@ -2,11 +2,13 @@
   "name": "splice-vs-slice",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine test/**/*.js"
   },
   "keywords": [],
   "author": "Piotr Kowalski <piecioshka@gmail.com> (https://piecioshka.pl)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  }
 }
