@@ -1,6 +1,6 @@
 # Array#splice vs Array#slice
 
-[![travis](https://img.shields.io/travis/piecioshka/splice-vs-slice.svg)](https://travis-ci.org/piecioshka/splice-vs-slice)
+[![travis-ci](https://api.travis-ci.com/piecioshka/splice-vs-slice.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/splice-vs-slice)
 
 * Testing [Array#splice](/test/splice.test.js)
 * Testing [Array#slice](/test/slice.test.js)
