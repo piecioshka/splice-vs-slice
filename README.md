@@ -1,6 +1,5 @@
 # Array#splice vs Array#slice
 
-[![dependencies](https://david-dm.org/piecioshka/splice-vs-slice.svg)](https://github.com/piecioshka/splice-vs-slice)
 [![travis](https://img.shields.io/travis/piecioshka/splice-vs-slice.svg)](https://travis-ci.org/piecioshka/splice-vs-slice)
 
 * Testing [Array#splice](/test/splice.test.js)
