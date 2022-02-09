@@ -1,11 +1,22 @@
 # Array#splice vs Array#slice
 
-[![travis-ci](https://api.travis-ci.com/piecioshka/splice-vs-slice.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/splice-vs-slice)
+* ⛔️ `Array#splice` — MUTATE a list
+* ✅ `Array#slice` — doesn't MUTATE a list
 
-* Testing [Array#splice](/test/splice.test.js)
-* Testing [Array#slice](/test/slice.test.js)
+```js
+// Example unit test based on AVA
+test("with one arg", (assert) => {
+  const inputForSlice = ["a", "b", "c"];
+  const inputForSplice = ["a", "b", "c"];
 
-## Summary
+  // Mutation = off
+  assert.deepEqual(inputForSlice.slice(1), ["b", "c"]);
+  assert.deepEqual(inputForSlice, ["a", "b", "c"]);
 
-* `Array#splice` — MUTATE a list
-* `Array#slice` — don't MUTATE a list — it returns a new one
+  // Mutation = on
+  assert.deepEqual(inputForSplice.splice(1), ["b", "c"]);
+  assert.deepEqual(inputForSplice, ["a"]);
+});
+```
+
+More examples are in [test.js](https://github.com/piecioshka/splice-vs-slice/blob/master/test.js) file.

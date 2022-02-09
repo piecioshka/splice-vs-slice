@@ -1,14 +1,13 @@
 {
+  "private": true,
   "name": "splice-vs-slice",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "test": "jasmine test/**/*.js"
-  },
-  "keywords": [],
-  "author": "Piotr Kowalski <piecioshka@gmail.com> (https://piecioshka.pl)",
   "license": "MIT",
+  "scripts": {
+    "test": "ava test.js"
+  },
   "devDependencies": {
-    "jasmine": "^3.4.0"
+    "ava": "^4.0.1"
   }
 }
